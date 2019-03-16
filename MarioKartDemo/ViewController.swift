@@ -24,5 +24,15 @@ class ViewController: UIViewController {
         print("Location: x: \(location.x), y: \(location.y)")
     }
     
+    @IBAction func didPinchKartView(_ sender: UIPinchGestureRecognizer) {
+        let scale = sender.scale;
+        let kartView = sender.view!
+        kartView.transform = CGAffineTransform(scaleX: scale, y: scale);
+        
+        print("scale: \(scale)");
+        
+    }
+    
+    
 }
 

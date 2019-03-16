@@ -28,14 +28,16 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Mar-At-ZM0" appends="YES" id="Jnc-vn-avO"/>
+                                    <outletCollection property="gestureRecognizers" destination="9vy-EM-2kf" appends="YES" id="egp-gP-m5d"/>
                                 </connections>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="odF-2P-bOa">
-                                <rect key="frame" x="102" y="384" width="211" height="170"/>
+                                <rect key="frame" x="102" y="384" width="142" height="118"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Dm7-TY-VBT" appends="YES" id="e8m-wx-adg"/>
+                                    <outletCollection property="gestureRecognizers" destination="c2T-W3-zFm" appends="YES" id="JjO-ER-XHK"/>
                                 </connections>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="M5U-0q-hLS">
@@ -44,6 +46,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="QYT-ic-4Mw" appends="YES" id="vO3-HY-eFx"/>
+                                    <outletCollection property="gestureRecognizers" destination="lhz-tg-dVT" appends="YES" id="xDJ-Rc-wTP"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -67,6 +70,21 @@
                         <action selector="didPanKartView:" destination="BYZ-38-t0r" id="dr2-0Z-Pys"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="9vy-EM-2kf">
+                    <connections>
+                        <action selector="didPinchKartView:" destination="BYZ-38-t0r" id="LlP-Mw-rUv"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="lhz-tg-dVT">
+                    <connections>
+                        <action selector="didPinchKartView:" destination="BYZ-38-t0r" id="FBe-IF-xra"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="c2T-W3-zFm">
+                    <connections>
+                        <action selector="didPinchKartView:" destination="BYZ-38-t0r" id="NCh-3s-tGJ"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
