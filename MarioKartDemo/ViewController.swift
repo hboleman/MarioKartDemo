@@ -15,6 +15,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+   
+    @IBAction func didPanKartView(_ sender: UIPanGestureRecognizer) {
+        let location = sender.location(in: view);
+        
+        print("Location: x: \(location.x), y: \(location.y)")
+    }
+    
 }
 
