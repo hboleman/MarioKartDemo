@@ -18,6 +18,8 @@ class ViewController: UIViewController {
    
     @IBAction func didPanKartView(_ sender: UIPanGestureRecognizer) {
         let location = sender.location(in: view);
+        let kartView = sender.view!
+        kartView.center = location;
         
         print("Location: x: \(location.x), y: \(location.y)")
     }
